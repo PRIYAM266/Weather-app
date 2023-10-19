@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
+import axios from "axios";
+
+axios.defaults.baseURL = "https://api.openweathermap.org/data/2.5";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

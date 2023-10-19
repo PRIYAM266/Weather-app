@@ -1,4 +1,5 @@
-// import { getItem } from "../helpers/sessionStorage";
+import { getItem } from "../helpers/sessionStorage";
+
 import {
   GET_DATA_ERROR,
   GET_DATA_LOADING,
@@ -6,9 +7,9 @@ import {
 } from "./actionTypes";
 
 const initState = {
-  // isLoading: getItem("weather") ? false : true,
-  // weatherData: getItem("weather") ? getItem("weather").weatherData : {},
-  // forcastData: getItem("weather") ? getItem("weather").forcastData : [],
+  isLoading: getItem("weather") ? false : true,
+  weatherData: getItem("weather") ? getItem("weather").weatherData : {},
+  forcastData: getItem("weather") ? getItem("weather").forcastData : [],
   isError: false,
 };
 
